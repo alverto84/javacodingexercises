@@ -15,10 +15,14 @@ public class ReverseArray implements ImplementationType {
   @Override
   public void imperative() {
     String str = "Saket Saurav";
+    String output = "";
+    StringBuilder sb = new StringBuilder();
     char[] array = str.toCharArray();
     for (int i = array.length - 1; i >= 0; i--) {
       System.out.println(array[i]);
+      sb.append(array[i]);
     }
+    output = sb.toString();
   }
 
   @Override
